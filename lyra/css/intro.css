@@ -1,0 +1,28 @@
+#intro-screen {
+  position: fixed;
+  inset: 0;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.intro-cube {
+  width: 140px;
+  height: 140px;
+  perspective: 800px;
+}
+
+.intro-cube img {
+  width: 100%;
+  height: 100%;
+  animation: floatRotate 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 25px rgba(255,255,255,0.15));
+}
+
+@keyframes floatRotate {
+  0%   { transform: rotateX(0deg) rotateY(0deg); }
+  50%  { transform: rotateX(20deg) rotateY(40deg); }
+  100% { transform: rotateX(0deg) rotateY(0deg); }
+}

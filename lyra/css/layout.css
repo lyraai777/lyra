@@ -1,0 +1,22 @@
+#app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.app-logo {
+  height: 28px;
+  opacity: 0.9;
+}
+
+#main-content {
+  flex: 1;
+}
